@@ -4,6 +4,8 @@ def main():
     # Lists to store ages
     female_ages = []
     male_ages = []
+    
+    # this is a comment
 
     print("This program calculates the average age by gender.")
     value = input("entra aca el numerito:")
