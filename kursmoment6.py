@@ -1,29 +1,17 @@
 
-
 def main():
     # Lists to store ages
     female_ages = []
     male_ages = []
-    
-    # this is a comment
 
     print("This program calculates the average age by gender.")
-    value = input("entra aca el numerito:")
-    try:
-        value = int(input("entra aca el numerito:"))
-    except: ValueError:
-        print("⚠️ Please enter a valid number.")
-
-    
-    print(value)
-
+   
     # Ask how many people to input
     num_people = get_valid_int("How many people do you want to enter? ")
 
     # Main input loop
     for i in range(num_people):
         print(f"\n--- Person {i + 1} ---")
-        name = input("Name: ")
         age = get_valid_int("Age: ")
         gender = get_valid_gender("Gender (m/f): ")
 
@@ -48,10 +36,8 @@ def main():
     else:
         print("No data for men.")
 
-# This makes sure the program only runs when executed directly
 
 def get_valid_int(prompt):
-    """Prompt user until they give a valid integer."""
     while True:
         try:
             value = int(input(prompt))
@@ -66,7 +52,7 @@ def get_valid_gender(prompt):
         if gender in ['m', 'f']:
             return gender
         else:
-            print("⚠️ Please enter 'm' for male or 'f' for female.")
+            print("Please enter 'm' for male or 'f' for female.")
 
 def calculate_average(age_list):
     """Return the average age from a list of ages, or None if empty."""
