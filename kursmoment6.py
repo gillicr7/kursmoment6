@@ -1,5 +1,4 @@
 
-
 def main():
     # Lists to store ages
     female_ages = []
